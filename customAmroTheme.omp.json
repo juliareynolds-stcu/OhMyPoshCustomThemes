@@ -36,19 +36,40 @@
     },
     {
       "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#A3BE8C",
+          "options": {
+            "style": "austin"
+          },
+          "style": "plain",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
       "newline": true,
       "segments": [
         {
           "foreground": "#cd5e42",
           "style": "plain",
-          "template": "\ue3bf ",
+          "template": "\uf132 ",
           "type": "root"
         },
         {
           "foreground": "#CD4277",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#f0e589{{ end }}"
+          ],
+          "options": {
+            "always_enabled": true
+          },
           "style": "plain",
-          "template": "# ",
-          "type": "text"
+          "template": "\u276f ",
+          "type": "status"
         }
       ],
       "type": "prompt"
