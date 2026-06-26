@@ -43,7 +43,7 @@
             "style": "austin"
           },
           "style": "plain",
-          "template": " {{ .FormattedMs }} ",
+          "template": " \uf017 {{ .FormattedMs }} ",
           "type": "executiontime"
         }
       ],
